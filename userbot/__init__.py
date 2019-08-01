@@ -42,16 +42,16 @@ if version_info[0] < 3 or version_info[1] < 6:
     quit(1)
 
 # Check if the config was edited by using the already used variable
-CONFIG_CHECK = os.environ.get("___________PLOX_______REMOVE_____THIS_____LINE__________", None)
+CONFIG_CHECK = os.environ.get("", None)
 
 if CONFIG_CHECK:
     LOGS.error("Please remove the line mentioned in the first hashtag from the config.env file")
     quit(1)
 
 
-API_KEY = os.environ.get("API_KEY", None)
+API_KEY = os.environ.get("API_KEY", '926954')
 
-API_HASH = os.environ.get("API_HASH", None)
+API_HASH = os.environ.get("API_HASH", '01902ed8f5f450f4d01ad5feacdad92e')
 
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
 
@@ -76,10 +76,10 @@ CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
 GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", None)
 
 SCREENSHOT_LAYER_ACCESS_KEY = os.environ.get(
-    "SCREENSHOT_LAYER_ACCESS_KEY", None
+    "SCREENSHOT_LAYER_ACCESS_KEY", 'e4b5a8039b70a06e4377cf16ff4b00a5'
     )
 
-OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", None)
+OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", '2282c29558ac90c976160ea7b15ad2dc')
 
 WELCOME_MUTE = sb(os.environ.get(
     "WELCOME_MUTE", "False"
