@@ -69,7 +69,7 @@ CONSOLE_LOGGER_VERBOSE = sb(
 
 DB_URI = os.environ.get("DATABASE_URL", None)
 
-OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
+OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", 'd6e3c9c85288957')
 
 CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
 
@@ -86,7 +86,7 @@ WELCOME_MUTE = sb(os.environ.get(
 ))
 
 YOUTUBE_API_KEY = os.environ.get(
-    "YOUTUBE_API_KEY", None
+    "YOUTUBE_API_KEY", 'AIzaSyB2Qi0-nUJzWcI4gjdvIGGw5P_hYaoXwa8'
     )
 
 SPOTIFY_USERNAME = os.environ.get("SPOTIFY_USERNAME", None)
